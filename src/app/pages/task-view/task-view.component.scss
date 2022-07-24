@@ -17,6 +17,7 @@
   background: white;
 }
 .task-list-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -71,6 +72,25 @@
   &.complete {
     text-decoration: line-through;
     opacity: 0.8;
+  }
+}
+.circle-add-button {
+  position: absolute;
+  bottom: 35px;
+  right: 35px;
+  height: 50px;
+  width: 50px;
+  background-color: $primary;
+  color: white;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 1px 1px 1px 1px black;
+  }
+  p {
+    font-weight: bold;
+    font-size: 2rem;
   }
 }
 // .has-bg-white {
